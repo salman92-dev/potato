@@ -18,14 +18,14 @@ export default function Footer() {
         </p>
 
         {/* Social icons */}
-        <div className="flex items-center gap-5 text-gray-900">
+        <div className="flex items-center gap-3 text-gray-900">
           
           <motion.a
             whileHover={{ scale: 1.2, y: -2 }}
             href="#"
             className="transition"
           >
-            <FaFacebookF />
+            <FaFacebookF size={22} />
           </motion.a>
 
           <motion.a
@@ -33,7 +33,7 @@ export default function Footer() {
             href="#"
             className="transition"
           >
-            <FaInstagram />
+            <FaInstagram size={26} />
           </motion.a>
 
           <motion.a
@@ -41,7 +41,7 @@ export default function Footer() {
             href="#"
             className="transition"
           >
-            <FaTiktok />
+            <FaTiktok size={22} />
           </motion.a>
         </div>
       </div>
