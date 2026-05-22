@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
-    <section className="w-full py-20 px-6 flex justify-center mt-[-10rem] relative z-10">
+    <section className="w-full py-20 px-6 flex justify-center -mt-28 md:mt-[-10rem] relative z-10">
       
       {/* Card */}
       <motion.div
