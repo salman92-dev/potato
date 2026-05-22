@@ -4,28 +4,28 @@ import { useEffect, useRef, useState } from "react";
 
 const features = [
   {
-    icon: "💡",
+    icon: "/images/innovative.png",
     title: "Innovative Food Experience",
     desc: "Revolutionizing how people eat and enjoy food.",
     delay: "delay-[100ms]",
     side: "left",
   },
   {
-    icon: "🌍",
+    icon: "/images/flavors.png",
     title: "Unique Global Flavors",
     desc: "Bringing the most exciting tastes from around the world.",
     delay: "delay-[300ms]",
     side: "left",
   },
   {
-    icon: "🍽️",
+    icon: "/images/quality.png",
     title: "Passion for Quality",
     desc: "Proudly delivering flavors we carefully discover and curate.",
     delay: "delay-[200ms]",
     side: "right",
   },
   {
-    icon: "🏘️",
+    icon: "/images/community.png",
     title: "Serving the DFW Community",
     desc: "Sharing great food experiences with the local area.",
     delay: "delay-[400ms]",
@@ -56,14 +56,14 @@ function FeatureCard({ icon, title, desc, delay, side, inView }) {
           : side === "left" ? "opacity-0 -translate-x-10" : "opacity-0 translate-x-10"
         }`}
     >
-      <div className="w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-2xl
-        transition-all duration-300 hover:scale-110 hover:shadow-lg hover:rotate-6 cursor-default">
-        {icon}
+      <div className="w-12 h-12  flex items-center justify-center text-2xl
+        transition-all duration-300 cursor-default">
+        <img src={icon} alt={title} />
       </div>
-      <h3 className="text-[#1a1200] font-extrabold text-lg leading-snug" style={{ fontFamily: "'Playfair Display', serif" }}>
+      <h3 className="urbanist text-[#1a1200] font-bold text-3xl">
         {title}
       </h3>
-      <p className="text-[#6b5c3e] text-sm leading-relaxed font-medium">
+      <p className="text-[#000000] text-[17px] font-medium max-w-xs">
         {desc}
       </p>
     </div>
@@ -161,7 +161,7 @@ export default function ProudToServeSection() {
         </div>
 
         {/* Three-column layout */}
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-12 md:gap-8 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_0.7fr_1fr] gap-12 md:gap-8 items-center">
 
           {/* Left features */}
           <div className="flex flex-col gap-10">
@@ -171,81 +171,9 @@ export default function ProudToServeSection() {
           </div>
 
           {/* Phone mockup */}
-          <div className={`flex justify-center transition-all duration-1000 delay-200 ${inView ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
-            <div className="relative">
-              {/* Glow rings behind phone */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="ripple-ring absolute w-[220px] h-[220px] rounded-full border-2 border-yellow-300/40" />
-                <div className="ripple-ring absolute w-[260px] h-[260px] rounded-full border border-orange-300/30" style={{ animationDelay: "0.6s" }} />
-                <div className="ripple-ring absolute w-[300px] h-[300px] rounded-full border border-yellow-200/20" style={{ animationDelay: "1.2s" }} />
-              </div>
-
-              {/* Phone shell */}
-              <div className="phone-float relative w-[200px] md:w-[230px] rounded-[36px] bg-[#111] p-[6px] shadow-2xl z-10">
-                {/* Notch */}
-                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[60px] h-[18px] bg-[#111] rounded-full z-20" />
-
-                {/* Screen */}
-                <div className="w-full rounded-[30px] overflow-hidden bg-[#222] aspect-[9/19] relative">
-                  {/* Mock food menu image */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-[#1a0800] via-[#3d1a00] to-[#1a0800] flex flex-col">
-                    {/* Top bar */}
-                    <div className="flex items-center gap-2 px-3 pt-6 pb-2 bg-black/30">
-                      <div className="w-4 h-4 rounded-full bg-orange-400" />
-                      <div className="flex-1 h-2 rounded bg-white/20" />
-                      <div className="w-4 h-4 rounded bg-white/20" />
-                    </div>
-
-                    {/* Menu content mockup */}
-                    <div className="flex-1 px-3 py-2 flex flex-col gap-1.5 overflow-hidden">
-                      <div className="text-orange-400 text-[10px] font-black tracking-widest text-center mb-1">MENU</div>
-                      {[...Array(7)].map((_, i) => (
-                        <div key={i} className="flex items-center justify-between gap-2">
-                          <div className="flex items-center gap-1.5">
-                            <div className="w-7 h-7 rounded bg-orange-900/60 flex-shrink-0" />
-                            <div className="flex flex-col gap-0.5">
-                              <div className="h-1.5 w-16 rounded bg-white/25" />
-                              <div className="h-1 w-10 rounded bg-white/15" />
-                            </div>
-                          </div>
-                          <div className="h-1.5 w-6 rounded bg-orange-400/60 flex-shrink-0" />
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Play button overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <button
-                        onClick={() => setPlaying(!playing)}
-                        className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/30 active:scale-95"
-                      >
-                        <span className="text-white text-xl ml-1">▶</span>
-                      </button>
-                    </div>
-
-                    {/* Bottom caption */}
-                    <div className="bg-black/60 px-3 py-2 text-center">
-                      <p className="text-white/70 text-[7px] leading-relaxed">Best baked potatoes in the DFW!</p>
-                      <p className="text-orange-400 text-[7px] font-bold tracking-widest mt-0.5">★ DALLAS, TEXAS</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating badge */}
-              {inView && (
-                <div className="badge-pop absolute -top-3 -right-4 bg-yellow-400 text-[#1a0a00] text-[10px] font-black px-3 py-1.5 rounded-full shadow-lg rotate-6 whitespace-nowrap">
-                  🔥 Trending Now
-                </div>
-              )}
-
-              {/* Bottom floating tag */}
-              {inView && (
-                <div className="badge-pop absolute -bottom-3 -left-5 bg-[#cf1f27] text-white text-[10px] font-bold px-3 py-1.5 rounded-full shadow-lg -rotate-3 whitespace-nowrap" style={{ animationDelay: "0.3s", animationFillMode: "both" }}>
-                  📍 Open Tue–Sat
-                </div>
-              )}
-            </div>
+          <div className={`relative flex justify-center transition-all duration-1000 delay-200 ${inView ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
+            <img src="/images/iphone-13.png" alt="" className="relative z-10"/>
+            <div className="absolute top-20 -left-12 w-[100%] h-[90%] bg-black/40"style={{filter: "blur(40px)"}}></div>
           </div>
 
           {/* Right features */}
