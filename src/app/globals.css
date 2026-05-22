@@ -33,3 +33,16 @@ body {
 .urbanist {
   font-family: urbanist;
 }
+@font-face {
+  font-family: alan-sans;
+  src: url(/fonts/alan-sans/AlanSans-VariableFont_wght.ttf);
+}
+.alan {
+  font-family: alan-sans;
+}
+
+.foodhero {
+  background-image: url('/images/foodhero-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+}

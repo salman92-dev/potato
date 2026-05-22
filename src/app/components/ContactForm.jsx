@@ -11,7 +11,7 @@ export default function ContactSection() {
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-full max-w-5xl bg-[#1e1b1b] text-white rounded-xl shadow-2xl p-8 md:p-12"
+        className="w-full max-w-5xl bg-[#1e1b1b] text-white shadow-4xl p-8 md:p-12"
       >
         
         {/* Title */}

@@ -102,11 +102,7 @@ export default function MenuSection() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center py-16 px-4"
-      style={{
-        background: "radial-gradient(ellipse 80% 60% at 50% 0%, #1a1208 0%, #0d0d0d 60%, #000 100%)",
-        fontFamily: "'Georgia', serif",
-      }}
+      className="min-h-screen flex items-center justify-center py-16 px-4 bg-[#241F21]"
     >
       <style>{`
         @keyframes fadeUp {
@@ -157,14 +153,10 @@ export default function MenuSection() {
             <span className="leaf text-3xl">🌿</span>
           </div>
           <h1
-            className="fade-up text-white font-black uppercase"
-            style={{ fontSize: "clamp(2.4rem,6vw,4rem)", letterSpacing: "0.18em", textShadow: "0 0 40px rgba(234,179,8,0.25)", animationDelay: "0.1s" }}
+            className="fade-up text-white font-extrabold uppercase alan text-7xl"
           >
             Our Menu
           </h1>
-          <div className="fade-up flex justify-center mt-1 mb-6" style={{ animationDelay: "0.2s" }}>
-            <div className="h-px w-32" style={{ background: "linear-gradient(90deg,transparent,#eab308,transparent)" }} />
-          </div>
 
           <div className="fade-up flex items-center justify-center gap-4" style={{ animationDelay: "0.3s" }}>
             <button

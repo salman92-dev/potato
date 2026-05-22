@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function FoodHero() {
   return (
-    <section className="relative w-full min-h-screen bg-[#c63b36] overflow-hidden flex items-center justify-center px-6 py-16">
+    <section className="foodhero relative w-full min-h-screen overflow-hidden flex items-center justify-center px-6 py-16">
       
       {/* Background blob */}
       <motion.div
@@ -25,9 +25,9 @@ export default function FoodHero() {
           className="flex justify-center"
         >
           <motion.img
-            src="/food-hero.png"
+            src="/images/food.png"
             alt="Food"
-            className="w-[320px] md:w-[450px] drop-shadow-2xl"
+            className="drop-shadow-2xl"
             animate={{ y: [0, -10, 0] }}
             transition={{ repeat: Infinity, duration: 4 }}
           />
@@ -40,11 +40,9 @@ export default function FoodHero() {
           transition={{ duration: 0.8 }}
           className="text-white"
         >
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight uppercase">
+          <h1 className="text-3xl md:text-6xl font-extrabold text-[#4E230B] leading-tight uppercase">
             Bold Flavors.
-            <br />
             Perfectly Stuffed.
-            <br />
             Made to Impress
           </h1>
 
@@ -56,19 +54,7 @@ export default function FoodHero() {
             whileHover={{ scale: 1.05 }}
             className="mt-8 flex items-center gap-4"
           >
-            <div className="bg-white text-black p-4 rounded-lg shadow-xl w-[140px] text-center">
-              <p className="text-xs uppercase font-bold">Best Main Dish</p>
-              <p className="text-sm mt-1">Risco 2022</p>
-            </div>
-
-            {/* Decorative arrow */}
-            <motion.div
-              animate={{ x: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-              className="text-green-300 text-2xl"
-            >
-              ➜
-            </motion.div>
+            <img src="/images/food-2.png" alt="food" className="max-w-[300px]" />
           </motion.div>
         </motion.div>
       </div>

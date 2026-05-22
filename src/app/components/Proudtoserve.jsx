@@ -117,7 +117,7 @@ export default function ProudToServeSection() {
         .phone-float { animation: float 5s ease-in-out infinite, phoneGlow 5s ease-in-out infinite; }
         .badge-pop { animation: badgePop 0.6s cubic-bezier(.34,1.56,.64,1) forwards; }
         .shimmer-text {
-          background: linear-gradient(90deg, #c8390a 0%, #ff6b35 40%, #ff9a00 60%, #c8390a 100%);
+          background: #FC5E2A;
           background-size: 200% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -143,16 +143,16 @@ export default function ProudToServeSection() {
 
         {/* Badge */}
         <div className={`flex justify-center mb-5 transition-all duration-500 ${inView ? "opacity-100" : "opacity-0 -translate-y-4"}`}>
-          <span className="inline-flex items-center gap-1.5 bg-[#3a7d44] text-white text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded-full shadow-md">
-            <span>▶</span> Green Living
+          <span className="relative inline-flex items-center gap-1.5 bg-[#FFDE16] text-[#4E220A] text-xs font-bold tracking-widest uppercase px-4 py-3 rounded-md shadow-md">
+             <img src="/images/arrow.png" alt="arrow" className="absolute -left-4 -top-4 w-5" />
+             Green Living
           </span>
         </div>
 
         {/* Heading */}
         <div className={`text-center mb-14 transition-all duration-700 delay-100 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
           <h2
-            className="text-5xl md:text-6xl font-black text-[#1a0a00] leading-tight tracking-tight"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="text-5xl md:text-7xl font-black text-[#4E230B] alan leading-tight tracking-tight"
           >
             PROUD TO{" "}
             <span className="shimmer-text">SERVE</span>{" "}

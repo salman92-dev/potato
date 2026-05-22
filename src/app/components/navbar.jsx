@@ -15,8 +15,8 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group cursor-pointer no-underline">
-          <div className="w-[52px] h-[52px] rounded-full bg-[#8b5a2b] flex items-center justify-center text-xl flex-shrink-0 transition-all duration-500 ease-[cubic-bezier(.34,1.56,.64,1)] group-hover:rotate-[15deg] group-hover:scale-110 group-hover:shadow-[0_0_0_3px_rgba(207,31,39,0.45),0_8px_24px_rgba(207,31,39,0.2)]">
-            🍔
+          <div className="w-[52px] h-[52px] rounded-full flex items-center justify-center text-xl flex-shrink-0 transition-all duration-500 ease-[cubic-bezier(.34,1.56,.64,1)] group-hover:rotate-[15deg] group-hover:scale-110 group-hover:shadow-[0_0_0_3px_rgba(207,31,39,0.45),0_8px_24px_rgba(207,31,39,0.2)]">
+            <img src="/images/logo.png" alt="logo" className="w-12" />
           </div>
           <span className="hidden sm:block text-[22px] font-bold tracking-[2px] text-white transition-all duration-[400ms] group-hover:tracking-[5px] group-hover:text-[#cf1f27] whitespace-nowrap">
             Come.Get.Stuffed
@@ -52,7 +52,7 @@ export default function Navbar() {
 
         {/* Order Now */}
         <div className="hidden md:block absolute right-0 top-0 h-full">
-          <button className="relative h-full px-10 bg-[#cf1f27] text-white font-bold tracking-[2.5px] text-[15px] uppercase border-none cursor-pointer overflow-hidden transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-[#a8171d]  before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-0 before:h-0 before:bg-white/[0.13] before:rounded-full before:-translate-x-1/2 before:-translate-y-1/2 before:transition-all before:duration-500 hover:before:w-[280px] hover:before:h-[280px]">
+          <button className="relative h-full px-10 bg-[#C1282F] text-white font-bold tracking-[2.5px] text-[15px] uppercase border-none cursor-pointer overflow-hidden transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-[#a8171d]  before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-0 before:h-0 before:bg-white/[0.13] before:rounded-full before:-translate-x-1/2 before:-translate-y-1/2 before:transition-all before:duration-500 hover:before:w-[280px] hover:before:h-[280px]">
             Order Now
           </button>
         </div>

@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Left text */}
-        <p className="text-sm text-gray-800 text-center md:text-left">
+        <p className="urbanist text-base text-black text-center md:text-left">
           © Copyright 2026 by The POT baked potato bar.
         </p>
 
