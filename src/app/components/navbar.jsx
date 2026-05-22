@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-[#231d20] text-white font-sans absolute top-0 left-0 z-20">
-      <nav className="max-w-7xl mx-auto h-[82px] flex items-center justify-between px-6 lg:px-8 relative">
+      <nav className="pl-16 h-[82px] flex items-center justify-between px-6 lg:px-8 relative">
 
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group cursor-pointer no-underline">
@@ -24,7 +24,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Links */}
-        <div className="hidden lg:flex items-center gap-8 mr-[180px] urbanist font-medium font-base">
+        <div className="hidden lg:flex items-center gap-8 mr-[240px] urbanist font-medium font-base">
           {links.map((item) => (
             <button
               key={item}
@@ -40,7 +40,7 @@ export default function Navbar() {
             </button>
           ))}
 
-          <div className="w-px h-5 bg-white/10" />
+          
 
           <button
             aria-label="Profile"
@@ -52,7 +52,7 @@ export default function Navbar() {
 
         {/* Order Now */}
         <div className="hidden md:block absolute right-0 top-0 h-full">
-          <button className="relative h-full px-10 bg-[#C1282F] text-white font-bold tracking-[2.5px] text-[15px] uppercase border-none cursor-pointer overflow-hidden transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-[#a8171d]  before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-0 before:h-0 before:bg-white/[0.13] before:rounded-full before:-translate-x-1/2 before:-translate-y-1/2 before:transition-all before:duration-500 hover:before:w-[280px] hover:before:h-[280px]">
+          <button className="relative h-full px-16 bg-[#C1282F] text-white font-bold tracking-[2.5px] text-[15px] uppercase border-none cursor-pointer overflow-hidden transition-all duration-[350ms] ease-[cubic-bezier(.4,0,.2,1)] hover:bg-[#a8171d]  before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-0 before:h-0 before:bg-white/[0.13] before:rounded-full before:-translate-x-1/2 before:-translate-y-1/2 before:transition-all before:duration-500 hover:before:w-[280px] hover:before:h-[280px]">
             Order Now
           </button>
         </div>
