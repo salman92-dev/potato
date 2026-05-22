@@ -22,17 +22,17 @@ export default function ContactSection() {
         {/* Info Row */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-300 mb-10">
           
-          <div className="flex items-center gap-2 text-[#828282] text-lg">
+          <div className="flex items-center gap-2 text-[#828282] text-sm md:text-lg max-sm:text-center">
             <FaMapMarkerAlt className="text-[#FEE63C] size-5" />
             <span>1516 Martin Luther King Jr Blvd Dallas, TX 75215</span>
           </div>
 
-          <div className="flex items-center gap-2 text-[#828282] text-lg">
+          <div className="flex items-center gap-2 text-[#828282] text-sm md:text-lg max-sm:text-center">
             <FaPhoneAlt className="text-[#FEE63C] size-5" />
             <span>(214) 210-9098</span>
           </div>
 
-          <div className="flex items-center gap-2 text-[#828282] text-lg">
+          <div className="flex items-center gap-2 text-[#828282] text-sm md:text-lg max-sm:text-center">
             <FaEnvelope className="text-[#FEE63C] size-6" />
             <span>info@thepotatolab.com</span>
           </div>
