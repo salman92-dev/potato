@@ -42,7 +42,9 @@ export default function MenuSection() {
 
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="text-3xl block mb-2">🌿</span>
+          <span className="text-3xl block mb-2">
+            <img src="/images/tree-branch.png" alt="tree branch" className="w-30 mx-auto -mb-7" />
+          </span>
 
           <h2 className="text-white text-6xl md:text-7xl font-black uppercase alan">
             Our Menu
@@ -54,7 +56,7 @@ export default function MenuSection() {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center flex-wrap gap-8 mb-14">
+        <div className="flex justify-center flex-wrap gap-8 md:gap-24 mb-8">
           {tabs.map((tab, i) => (
             <button
               key={tab}
@@ -76,8 +78,8 @@ export default function MenuSection() {
 
         {/* Swiper */}
         <Swiper
-          modules={[Navigation, Pagination]}
-          navigation
+          modules={[Pagination]}
+         
           pagination={{ clickable: true }}
           spaceBetween={30}
           grabCursor={true}
