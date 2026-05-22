@@ -40,7 +40,7 @@ export default function FoodHero() {
           transition={{ duration: 0.8 }}
           className="text-white"
         >
-          <h1 className="text-3xl md:text-6xl font-extrabold text-[#4E230B] leading-tight uppercase">
+          <h1 className="alan text-3xl md:text-6xl font-extrabold text-[#4E230B] leading-tight uppercase">
             Bold Flavors.
             Perfectly Stuffed.
             Made to Impress
