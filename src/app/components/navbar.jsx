@@ -28,19 +28,13 @@ export default function Navbar() {
           {links.map((item) => (
             <button
               key={item}
-              onClick={() => setActive(item)}
-              className={`relative text-[13px] font-light tracking-wide bg-transparent border-none cursor-pointer pb-[2px] whitespace-nowrap transition-colors duration-[250ms]
-                after:absolute after:bottom-[-2px] after:h-[1.5px] after:bg-[#cf1f27] after:rounded-full after:transition-all after:duration-[350ms]
-                ${active === item
-                  ? "text-white after:left-0 after:w-full"
-                  : "text-white/60 hover:text-white after:left-1/2 after:w-0 hover:after:w-full hover:after:left-0"
-                }`}
+              className="relative text-[13px] font-light tracking-wide bg-transparent border-none cursor-pointer pb-[2px] whitespace-nowrap transition-colors duration-[250ms]
+                after:absolute after:bottom-[-2px] after:h-[1.5px] after:bg-[#cf1f27] after:rounded-full after:transition-all after:duration-[350ms] text-white/60 hover:text-white after:left-1/2 after:w-0 hover:after:w-full hover:after:left-0"
             >
               {item}
             </button>
           ))}
 
-          
 
           <button
             aria-label="Profile"
