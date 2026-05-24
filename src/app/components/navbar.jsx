@@ -10,7 +10,7 @@ export default function Navbar() {
   const links = ["Home", "About", "Contact Us", "Opening Hours"];
 
   return (
-    <header className="w-full bg-[#231d20] text-white font-sans absolute top-0 left-0 z-20">
+    <header className="w-full text-white font-sans absolute top-0 left-0 z-20">
       <nav className="pl-16 h-[82px] flex items-center justify-between px-6 lg:px-8 relative">
 
         {/* Logo */}
