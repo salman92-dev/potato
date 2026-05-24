@@ -19,7 +19,19 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden flex items-end justify-center h-[92vh] md:h-screen bg-[#241F21] pb-12 md:pb-16 px-4">
       <Navbar />
-
+      <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source
+    src="https://res.cloudinary.com/dwhcqyymc/video/upload/pot_-_Trim_-_Trim_-_Trim_d2hrot.mp4"
+    type="video/mp4"
+  />
+</video>
+      
       {/* Floating Images */}
 
       <motion.img
