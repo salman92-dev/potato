@@ -172,7 +172,7 @@ export default function ProudToServeSection() {
 
           {/* Phone mockup */}
           <div className={`relative flex justify-center transition-all duration-1000 delay-200 ${inView ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
-            <img src="/images/iphone-13.png" alt="iphone 13" className="relative z-10"/>
+            <img src="/images/Iphone-13.png" alt="iphone 13" className="relative z-10"/>
             <div className="absolute top-20 -left-12 w-[100%] h-[90%] bg-black/40"style={{filter: "blur(40px)"}}></div>
           </div>
 
