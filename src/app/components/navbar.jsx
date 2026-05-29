@@ -10,13 +10,13 @@ export default function Navbar() {
   const links = ["Home", "About", "Contact Us", "Opening Hours"];
 
   return (
-    <header className="w-full text-white font-sans absolute top-0 left-0 z-20">
+    <header className="w-full text-white font-sans absolute top-0 left-0 z-99">
       <nav className="pl-16 h-[82px] flex items-center justify-between px-6 lg:px-8 relative">
 
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group cursor-pointer no-underline">
-          <div className="w-[52px] h-[52px] rounded-full flex items-center justify-center text-xl flex-shrink-0 transition-all duration-500 ease-[cubic-bezier(.34,1.56,.64,1)] group-hover:rotate-[15deg] group-hover:scale-110 group-hover:shadow-[0_0_0_3px_rgba(207,31,39,0.45),0_8px_24px_rgba(207,31,39,0.2)]">
-            <img src="/images/logo.png" alt="logo" className="w-12" />
+          <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center text-xl flex-shrink-0 transition-all duration-500 ease-[cubic-bezier(.34,1.56,.64,1)] group-hover:rotate-[15deg] group-hover:scale-110 group-hover:shadow-[0_0_0_3px_rgba(207,31,39,0.45),0_8px_24px_rgba(207,31,39,0.2)]">
+            <img src="/images/logo.png" alt="logo" className="w-18" />
           </div>
           <span className="hidden sm:block text-[22px] font-bold tracking-[2px] text-white transition-all duration-[400ms] group-hover:tracking-[5px] group-hover:text-[#cf1f27] whitespace-nowrap">
             Come.Get.Stuffed
